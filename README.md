@@ -46,17 +46,9 @@ It only supports Windows and Linux for now. macOS support is not planned. Pull r
 
 ## Installation
 
-### Windows / Linux
+###  Linux
 
-Get the latest release from the [Releases](https://github.com/NyaomiDEV/Sunamu/releases/latest) section.
-
-On Windows, you can choose between the installer and the ZIP file (portable app).
-
-On Linux, the AppImage is recommended since it runs basically everywhere (but also RedHat, Debian and Arch packages are provided.)
-
-### Arch Linux
-
-`sunamu` and `sunamu-git` are available as AUR packages. Install either of them via your AUR helper of choice.
+Get the latest release from the [Releases](https://github.com/Arcatis/Sunamu/releases/latest) section.
 
 ## Configuration
 
@@ -75,7 +67,3 @@ You'd have to install the official Musixmatch Desktop App on your computer. Then
 ## Notable observed quirks
 
 Check and contribute to the compatibility table [here](COMPATIBILITY.md).
-
-## License
-
-See the [LICENSE](LICENSE) file.
