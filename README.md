@@ -1,3 +1,14 @@
+# 
+
+I do not own this software. This repository is only hosting a prebuilt AppImage.
+
+I do not own this software. This repository is only hosting a prebuilt AppImage.
+
+I do not own this software. This repository is only hosting a prebuilt AppImage.
+
+Original developer: [NyaomiDEV](https://github.com/NyaomiDEV)
+
+
 <img alt="Logo" src="assets/icons/icon.svg" width="128px" height="128px" align="left"/>
 
 # Sunamu (スナム)
