@@ -1,0 +1,18 @@
+node_modules
+/dist/types*
+/dist/main/
+/dist/www/lib/
+/dist/www/index*
+!/dist/www/index.htm
+/lib/
+/targets/
+/yarn-*.log
+/.env
+/test.js
+
+# just in case someone runs makepkg directly
+/aur/sunamu*/*
+!/aur/sunamu*/PKGBUILD
+!/aur/sunamu*/.SRCINFO
+!/aur/sunamu*/sunamu.desktop
+!/aur/sunamu*/sunamu.sh

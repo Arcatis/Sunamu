@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.settings.json",
+  "exclude": [
+    "./lib/npapi/electron-npapi.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "../../dist", /* Redirect output structure to the directory. */
+    "checkJs": false
+  }
+}

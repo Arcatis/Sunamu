@@ -1,0 +1,90 @@
+appId: xyz.nyaomi.sunamu
+productName: Sunamu
+copyright: Copyright © 2021 Naomi Calabretta
+directories:
+  output: targets
+files:
+  - "**/*"
+  - "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}"
+  - "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}"
+  - "!**/node_modules/*.d.ts"
+  - "!**/node_modules/.bin"
+  - "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}"
+  - "!.editorconfig"
+  - "!**/._*"
+  - "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}"
+  - "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}"
+  - "!**/{appveyor.yml,.travis.yml,circle.yml}"
+  - "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+  - "!src/*"
+  - "!.eslintrc.json"
+  - "!test.js"
+  - "!README.md"
+  - "!tsconfig.json"
+  - "!tsconfig.settings.json"
+  - "!assets/{preview*.png,kwin-widget-rule.kwinrule}"
+  - "!aur/*"
+  - "!.github/*"
+  - "!.vscode/*"
+  - "!.env"
+  - "!.nvmrc"
+asar: true
+asarUnpack:
+  - "./node_modules/sharp/vendor/**/*"
+  - "./node_modules/sharp/build/**/*"
+linux:
+  target:
+  - AppImage
+  - deb
+  - rpm
+  - pacman
+  - tar.xz
+  maintainer: Naomi Calabretta
+  vendor: Naomi Calabretta
+  executableName: Sunamu
+  icon: assets/icons
+  synopsis: Beautiful app to show which music you are playing
+  description: Show your currently playing song in a stylish way!
+  category: Multimedia
+  desktop: Sunamu
+  publish:
+    - github
+deb:
+  depends:
+   - libgtk-3-0
+   - libnotify4
+   - libxss1
+   - libxtst6
+   - libnss3
+   - libatspi2.0-0
+   - libuuid1
+   - libvips
+rpm:
+  depends:
+   - /bin/sh
+   - gtk3
+   - libnotify
+   - libXScrnSaver
+   - libXtst
+   - nss
+   - at-spi2-core
+   - libuuid
+   - libvips
+pacman:
+  depends:
+   - gtk3
+   - nss
+   - libvips
+   - c-ares
+   - libxslt
+   - libevent
+   - minizip
+   - re2
+   - snappy
+win:
+  target:
+  - nsis
+  - zip
+  icon: assets/icons/icon.ico
+  legalTrademarks: Copyright © 2021 Naomi Calabretta
+  
